@@ -6,6 +6,7 @@ import cors from "cors";
 const app = express();
 app.use(cors());
 
+app.get("/", (req, res) => res.send("Engines on!!!"));
 app.get("/proxyImage", async (req, res) => {
   console.log("hit");
   // const isChrome = req.headers["user-agent"].match(/chrome/);
